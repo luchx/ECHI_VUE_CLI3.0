@@ -2,16 +2,12 @@ import Vue from 'vue';
 import Router, {
   RouteConfig,
 } from 'vue-router';
-import Home from '@/views/Home.vue';
+import filterRouter from '@/router/filterRouter';
 
 Vue.use(Router);
 
 const routes: RouteConfig[] = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home,
-  },
+  ...filterRouter,
   {
     path: '/about',
     name: 'about',
