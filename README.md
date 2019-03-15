@@ -61,9 +61,6 @@ src：项目源码。开发的时候代码写在这里。
  |    |--config.ts # axios拦截器配置文件
  |    |--service,ts # axios请求配置文件
  |--components # 项目公共组件库
- |--element-theme # element-ui配置文件
- |    |--index.scss # 主题配置文件
- |    |--element.js # 组件引入配置文件
  |--router # 项目路由
  |    |--index.ts # 入口及路由初始化
  |    |--config # 路由操作方法的封装
