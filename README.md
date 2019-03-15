@@ -2,12 +2,12 @@
 
 ## 技术栈及使用要求
 > 1. 基于Vue全家桶 + axios + typescript + element-ui + scss + webpack4构建的企业级应用项目;
-> 2. 开发时请确保你已了解或掌握以上技术要求,然后你就可以愉快的玩耍了;;
+> 2. 开发时请确保你已了解或掌握以上技术要求,然后你就可以愉快的玩耍了;
 
 ## 从新建项目到设置打包环境
 ```
 1. vue create vue-cli3-template
-2. 新建 vue.config.js 文件，设置baseUrl: './'
+2. 新建 vue.config.js 文件，设置baseUrl: './';更多配置请[点击链接](https://cli.vuejs.org/zh/guide/)
 3. 新建各个环境的文件，例如：.env.development .env.test .env.production
 4. 在 package.json 中设置打包命令，例如：build:development build:test build:production，在执行命令的语句中设置 mode 环境，例如：--mode test
 ```
