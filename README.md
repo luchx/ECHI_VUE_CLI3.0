@@ -15,8 +15,9 @@
 ## 关于环境变量的注意事项
 * 环境名应该与环境文件统一
 * 环境文件放置根目录下
+* 关于打包配置路径,请修改vue.config.js文件下的输出地址
 * 除了 `baseUrl` 和 `NODE_ENV` 其他环境变量使用 VUE_APP 开头
-* 另外还设定本地运行环境`local`,你可以在项目拉取下来后补充 `.env.local.development` 文件,并添加如下信息并替换你自己所在服务器的域名及端口;
+* 另外还设定本地运行环境`local`,你可以在项目拉取下来后补充 `.env.development.local` 文件,并添加如下信息并替换你自己所在服务器的域名及端口;
 例如 :
     NODE_ENV='development'
     VUE_APP_URL='http://localhost:8080'  
