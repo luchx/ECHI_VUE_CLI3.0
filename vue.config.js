@@ -10,7 +10,7 @@ const srcStaticPath = '静态资源存放地址/front';
 
 module.exports = {
     // 基本路径
-    baseUrl: process.env.NODE_ENV === "development" ? "./" : "front",
+    publicPath: process.env.NODE_ENV === "development" ? "./" : "front",
     // 输出文件目录
     outputDir: process.env.NODE_ENV === "development" ? "dist" : path.resolve(__dirname, srcStaticPath),
     // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
