@@ -63,15 +63,12 @@ src：项目源码。开发的时候代码写在这里。
  |--components # 项目公共组件库
  |--router # 项目路由
  |    |--index.ts # 入口及路由初始化
- |    |--config # 路由操作方法的封装
  |    |--filterRouter # 页面路由文件
  |--store # 基于Vuex的状态管理模块
  |    |--index.ts # 入口及store初始化
  |    |--modules # 子模块的store对象
  |--utils # 公共库函数
- |    |--index.ts # 常用工具类的入口文件
  |--views # 项目应用页面，根据应用需要，还可以有子页面，各子页面目录结构和顶级子页面类似
- |    |--components # 页面级公共组件
  |--App.vue # 项目根视图
  |--main.ts # 项目入口文件
 
