@@ -1,6 +1,17 @@
 const path = require("path");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
+const isProduction = process.env.NODE_ENV === 'production';
+const cdn = {
+    css: [],
+    js: [
+        'https://cdn.bootcss.com/vue/2.5.17/vue.runtime.min.js',
+        'https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js',
+        'https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js',
+        'https://cdn.bootcss.com/axios/0.18.0/axios.min.js',
+    ]
+}
+
 function resolve(dir) {
     return path.join(__dirname, dir)
 }
