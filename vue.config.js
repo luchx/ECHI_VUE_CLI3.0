@@ -62,22 +62,29 @@ module.exports = {
         }
     },
     configureWebpack: config => {
-        if (process.env.NODE_ENV === 'production') {
-            // 为生产环境修改配置...
-            return {
-                plugins: [
-                    //生产环境自动删除console
-                    new UglifyJsPlugin({
-                        uglifyOptions: {
-                            compress: {
-                                warnings: false,
-                                drop_debugger: true,
-                                drop_console: true
-                            }
-                        }
-                    })
-                ]
+        if (isProduction) {
+            // 用cdn方式引入
+            config.externals = {
+                'vue': 'Vue',
+                'vuex': 'Vuex',
+                'vue-router': 'VueRouter',
+                'axios': 'axios'
             }
+            // 为生产环境修改配置...
+            config.plugins.push(
+                //生产环境自动删除console
+                new UglifyJsPlugin({
+                    uglifyOptions: {
+                        compress: {
+                            warnings: false,
+                            drop_debugger: true,
+                            drop_console: true,
+                        },
+                    },
+                    sourceMap: false,
+                    parallel: true,
+                })
+            );
         } else {
             // 为开发环境修改配置...
         }
