@@ -41,7 +41,25 @@ module.exports = {
             .set("@", resolve("src"))
             .set("@img", resolve("src/assets/images"))
             .set("@css", resolve("src/assets/styles/css"))
-            .set("@scss", resolve("src/assets/styles/scss"))
+            .set("@scss", resolve("src/assets/styles/scss"));
+        // 生产环境配置
+        if (isProduction) {
+            // 删除预加载
+            config.plugins.delete('preload');
+            config.plugins.delete('prefetch');
+            // 压缩代码
+            config.optimization.minimize(true);
+            // 分割代码
+            config.optimization.splitChunks({
+                chunks: 'all'
+            });
+            // 生产环境注入cdn
+            config.plugin('html')
+                .tap(args => {
+                    args[0].cdn = cdn;
+                    return args;
+                });
+        }
     },
     configureWebpack: config => {
         if (process.env.NODE_ENV === 'production') {
