@@ -79,8 +79,8 @@ src：项目源码。开发的时候代码写在这里。
 
 ### 使用命令行
 ```bash
-$ git clone git@github.com:Echi1993/vue-cli3-template.git
-$ cd vue-cli3-template
+$ git clone git@github.com:luchx/ECHI_VUE_CLI3.0.git
+$ cd ECHI_VUE_CLI3.0
 $ npm install
 $ npm run serve         # 访问 http://localhost:8080
 $ npm run build         # Compiles and minifies for production
