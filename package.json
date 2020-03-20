@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "serve:local": "vue-cli-service serve --mode development.local",
+    "serve:mock": "vue-cli-service serve --mode mock",
     "build": "vue-cli-service build --report",
     "build:prod": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
@@ -30,6 +31,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-plugin-component": "^1.1.1",
     "chai": "^4.1.2",
+    "mockjs": "^1.1.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.2.1",
