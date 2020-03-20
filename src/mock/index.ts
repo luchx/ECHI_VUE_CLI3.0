@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 
 Mock.setup({
-	timeout: "1000"
+	timeout: "200-600"
 });
 
 let fetchList = [];

@@ -15,7 +15,7 @@ export default class Http {
   public static get(req: any): any {
     return this.request({
       method: 'GET',
-      url: `/${req.url}`,
+      url: req.url,
       params: req.data,
     });
   }
@@ -29,7 +29,7 @@ export default class Http {
   public static put(req: any): any {
     return this.request({
       method: 'PUT',
-      url: `/${req.url}`,
+      url: req.url,
       data: req.data,
     });
   }
@@ -43,7 +43,7 @@ export default class Http {
   public static post(req: any): any {
     return this.request({
       method: 'post',
-      url: `/${req.url}`,
+      url: req.url,
       data: req.data,
     });
   }
@@ -57,7 +57,7 @@ export default class Http {
   public static delete(req: any): any {
     return this.request({
       method: 'DELETE',
-      url: `/${req.url}`,
+      url: req.url,
       params: req.data,
     });
   }

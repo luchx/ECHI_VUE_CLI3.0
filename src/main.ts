@@ -5,7 +5,7 @@ import store from './store';
 
 // 引入 mockjs
 if (process.env.NODE_ENV === 'development' && process.env.VUE_APP_MOCK) {
-  require('@src/mock');
+  require('@/mock');
 }
 
 Vue.config.productionTip = false;
