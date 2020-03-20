@@ -1,7 +1,7 @@
 <h1 align="center">Vue cli3 template 开发须知</h1>
 
 ## 技术栈及使用要求
-> 1. 基于Vue全家桶 + axios + typescript + element-ui + scss + webpack4构建的企业级应用项目;
+> 1. 基于Vue全家桶 + axios + mockjs + typescript + element-ui + scss + webpack4构建的企业级应用项目;
 > 2. 开发时请确保你已了解或掌握以上技术要求,然后你就可以愉快的玩耍了;
 
 ## 从新建项目到设置打包环境
